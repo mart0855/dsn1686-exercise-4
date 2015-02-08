@@ -1,0 +1,75 @@
+@-moz-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-ms-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-o-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-webkit-viewport {
+  width: device-width;
+  scale: 1;
+}
+@viewport {
+  width: device-width;
+  scale: 1;
+}
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  background: #363F45;
+}
+body #container {
+  width: 600px;
+  margin: 20px auto;
+}
+body #container #accordion {
+  margin-top: 20px;
+}
+body #container #accordion .item {
+  width: 400px;
+  height: 30px;
+  /* height = total height of A child element */
+  overflow: hidden;
+  transition: height ease-in-out 500ms;
+  /* css3 transition */
+  -o-transition: height ease-in-out 500ms;
+  -moz-transition: height ease-in-out 500ms;
+  -webkit-transition: height ease-in-out 500ms;
+  background-color: whitesmoke;
+  margin-bottom: 5px;
+  box-shadow: 0 1px 5px #FFCCBC;
+}
+body #container #accordion a {
+  display: block;
+  height: 20px;
+  line-height: 10px;
+  background: #FF5722;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+body #container #accordion p {
+  height: 200px;
+  padding: 10px;
+  color: #363F45;
+}
+body #container #accordion div:hover {
+  height: 200px
+  /* height = total height of A and P elements */
+}
+body #container #accordion div:hover a {
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  color: #03A9F4;
+}
