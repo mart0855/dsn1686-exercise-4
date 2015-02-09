@@ -12,13 +12,19 @@ html {
 	text-size-adjust: 100%;
 }
 
+.wrapper {
+  margin-left: 30px
+}
+
 body {
   font-family: "Roboto", Helvetica, sans-serif;
-  background: $bg-color;
-
+  background-color: $bg-color;
+  & h1{
+    color: $text-color;
+  }
 #container {
   width: 600px;
-  margin: 20px auto;
+  margin: 20px 0;
 
     #accordion {
       margin-top: 20px;
@@ -37,17 +43,21 @@ body {
       // -moz-border-radius: 5px;
       // -webkit-border-radius: 5px;
       margin-bottom: 5px;
-      box-shadow: 0 1px 5px $primary-light;
+      box-shadow: 0 1px 5px $secondary;
       }
 
       a {
         display: block;
-        height: 20px;
+        height: 10px;
         line-height: 10px;
-        background: $primary;
+        background-color: $primary;
         padding: 10px;
         color: $text-color;
         text-decoration: none;
+      }
+
+      img {
+        width: 100%;
       }
 
       p {
@@ -57,12 +67,12 @@ body {
       }
 
       div:hover {
-      height: 200px; /* height = total height of A and P elements */
+      height: 250px; /* height = total height of A and P elements */
 
         a {
         border-bottom: 1px solid #ccc;
         font-weight: bold;
-        color: $secondary;
+        color: $primary-light;
         }
       }
     }

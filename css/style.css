@@ -25,13 +25,20 @@ html {
   text-size-adjust: 100%;
 }
 
+.wrapper {
+  margin-left: 30px;
+}
+
 body {
   font-family: "Roboto", Helvetica, sans-serif;
-  background: #363F45;
+  background-color: #1a2129;
+}
+body h1 {
+  color: #fff;
 }
 body #container {
   width: 600px;
-  margin: 20px auto;
+  margin: 20px 0;
 }
 body #container #accordion {
   margin-top: 20px;
@@ -48,28 +55,31 @@ body #container #accordion .item {
   -webkit-transition: height ease-in-out 500ms;
   background-color: whitesmoke;
   margin-bottom: 5px;
-  box-shadow: 0 1px 5px #FFCCBC;
+  box-shadow: 0 1px 5px #cdc9c4;
 }
 body #container #accordion a {
   display: block;
-  height: 20px;
+  height: 10px;
   line-height: 10px;
-  background: #FF5722;
+  background-color: #dc3469;
   padding: 10px;
   color: #fff;
   text-decoration: none;
 }
+body #container #accordion img {
+  width: 100%;
+}
 body #container #accordion p {
   height: 200px;
   padding: 10px;
-  color: #363F45;
+  color: #1a2129;
 }
 body #container #accordion div:hover {
-  height: 200px
+  height: 250px
   /* height = total height of A and P elements */
 }
 body #container #accordion div:hover a {
   border-bottom: 1px solid #ccc;
   font-weight: bold;
-  color: #03A9F4;
+  color: #d0a0aa;
 }
